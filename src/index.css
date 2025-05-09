@@ -1,0 +1,100 @@
+/* Base Setup */
+:root {
+  --font-body: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+
+  --font-code: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
+
+  /* Light Theme Colors */
+  --bg-light: #f5f5f5;
+  --text-light: #111111;
+
+  /* Dark Theme Colors */
+  --bg-dark: #190046ed;
+  --text-dark: #ffffff;
+
+  /* Shared Colors */
+  --accent: #ff9900;
+  --transition-speed: 0.4s;
+}
+
+body {
+  margin: 0;
+  font-family: var(--font-body);
+  background-color: var(--bg-dark);
+  color: var(--text-dark);
+  transition: background-color var(--transition-speed), color var(--transition-speed);
+  min-height: 100vh;
+  line-height: 1.6;
+  overflow-x: hidden;
+}
+
+/* Light mode override */
+body.light-mode {
+  background-color: var(--bg-light);
+  color: var(--text-light);
+}
+
+/* Smooth typography */
+h1, h2, h3, h4, h5, h6 {
+  transition: color var(--transition-speed);
+  font-weight: 600;
+  line-height: 1.25;
+}
+
+p, a, li, span {
+  transition: color var(--transition-speed);
+}
+
+/* Code styling */
+code {
+  font-family: var(--font-code);
+  background-color: rgba(255, 255, 255, 0.1);
+  padding: 2px 4px;
+  border-radius: 4px;
+  font-size: 0.95em;
+  transition: background-color var(--transition-speed);
+}
+
+body.light-mode code {
+  background-color: rgba(0, 0, 0, 0.05);
+}
+
+/* Scrollbar Styling (Modern Browsers) */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--accent);
+  border-radius: 4px;
+}
+
+/* Animation on entry (fade-in) */
+.fade-in {
+  opacity: 0;
+  animation: fadeIn var(--transition-speed) ease-in forwards;
+}
+
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+  }
+}
+
+/* Responsive Utility Classes */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 16px;
+}
+
+@media (max-width: 768px) {
+  .container {
+    padding: 0 12px;
+  }
+}

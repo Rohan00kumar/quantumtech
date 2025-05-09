@@ -1,0 +1,68 @@
+.resource-page {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #0c0c1c;
+  color: #ffffff;
+  padding: 40px 20px;
+  min-height: 100vh;
+  text-align: center;
+}
+
+.resource-header h1 {
+  font-size: 36px;
+  color: #ffcc66;
+}
+
+.resource-header p {
+  font-size: 18px;
+  color: #cccccc;
+  max-width: 800px;
+  margin: 0 auto 40px;
+}
+
+/* Grid of resource cards */
+.resource-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.resource-card {
+  background-color: #1a1a2e;
+  padding: 25px;
+  border-radius: 12px;
+  transition: transform 0.3s, box-shadow 0.3s;
+  text-align: left;
+}
+
+.resource-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 5px 20px rgba(255, 153, 0, 0.2);
+}
+
+.resource-card h3 {
+  color: #ff9900;
+  margin-bottom: 10px;
+}
+
+.resource-card p {
+  color: #dddddd;
+  font-size: 15px;
+  margin-bottom: 15px;
+}
+
+.resource-link {
+  display: inline-block;
+  background-color: #ff9900;
+  color: #000;
+  padding: 8px 16px;
+  border-radius: 20px;
+  font-weight: bold;
+  text-decoration: none;
+  transition: background-color 0.3s;
+}
+
+.resource-link:hover {
+  background-color: #e68a00;
+}

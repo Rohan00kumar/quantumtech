@@ -1,0 +1,79 @@
+body {
+  transition: background-color 0.5s ease, color 0.5s ease;
+}
+
+.navbar {
+  padding: 2px 24px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 30px;
+  margin: 10px 20px;
+  transition: background 0.5s ease, color 0.5s ease;
+}
+
+.navbar.dark {
+  background: linear-gradient(135deg, #2e2e2e, #1a1a1a);
+  color: #ffffff;
+}
+
+.navbar.light {
+  background: linear-gradient(135deg, #f0f0f0, #ffffff);
+  color: #000000;
+}
+
+.logo {
+  font-family: 'Arial', sans-serif;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.navbar-menu {
+  list-style-type: none;
+  display: flex;
+  gap: 20px;
+  padding: 0;
+  margin: 0;
+}
+
+.navbar-item {
+  display: flex;
+  align-items: center;
+}
+
+.navbar-link {
+  text-decoration: none;
+  font-size: 18px;
+  transition: color 0.3s ease, transform 0.3s ease;
+  color: inherit;
+  padding: 8px 12px;
+  border-radius: 10px;
+}
+
+.navbar-link:hover {
+  color: #ff9900;
+  transform: scale(1.05);
+  background-color: rgba(255, 153, 0, 0.1);
+}
+
+.theme-toggle {
+  background: none;
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.theme-toggle:hover {
+  transform: rotate(20deg);
+}
+
+body.light-mode {
+  background-color: #f9f9f9;
+  color: #000;
+}
+
+body:not(.light-mode) {
+  background-color: #0c0c1c;
+  color: #fff;
+}
