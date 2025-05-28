@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/Rohan00kumar/quantumtech.git/static/css/main.6abc7864.css",
+    "main.js": "/Rohan00kumar/quantumtech.git/static/js/main.d43deead.js",
+    "index.html": "/Rohan00kumar/quantumtech.git/index.html",
+    "main.6abc7864.css.map": "/Rohan00kumar/quantumtech.git/static/css/main.6abc7864.css.map",
+    "main.d43deead.js.map": "/Rohan00kumar/quantumtech.git/static/js/main.d43deead.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.6abc7864.css",
+    "static/js/main.d43deead.js"
+  ]
+}
